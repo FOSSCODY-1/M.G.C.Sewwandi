@@ -42,23 +42,26 @@ var player2=0;
 
 function changetext(id){
 var won;
+won=getWinner();
   if(won!=1){
     if(id.innerHTML !=="x" && id.innerHTML!=="o"){
     if(player1==1){
         id.innerHTML='x';
         player2=1;
         player1=0;
-        won=getWinner();
+     
     }
     else{
         id.innerHTML='o';
         player1=1;
         player2=0;
-        won=getWinner();
+       
         
     }
 }
 
-  }    
 }
-
+else{
+  return;    
+}
+}
