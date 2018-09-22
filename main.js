@@ -1,4 +1,4 @@
-
+/*var winner=0;
 
 function getWinner(){
     var box1=document.getElementById("b1"),
@@ -13,17 +13,20 @@ function getWinner(){
 
         if(box1.innerHTML != "null" && box1.innerHTML==box2.innerHTML && box2.innerHTML==box3.innerHTML || box4.innerHTML != "null" && box4.innerHTML==box5.innerHTML && box5.innerHTML==box6.innerHTML || box7.innerHTML != "null" && box7.innerHTML==box8.innerHTML && box8.innerHTML==box9.innerHTML  ){
             console.log('winner');
+            winner=1;
         }
         elseif(box1.innerHTML != "null" && box1.innerHTML==box4.innerHTML && box4.innerHTML==box7.innerHTML || box2.innerHTML != "null" && box2.innerHTML==box5.innerHTML && box5.innerHTML==box8.innerHTML || box3.innerHTML != "null" && box3.innerHTML==box6.innerHTML && box6.innerHTML==box9.innerHTML  ){
             console.log('winner');
+            winner=1;
         }
         elseif(box1.innerHTML != "null" && box1.innerHTML==box5.innerHTML && box5.innerHTML==box9.innerHTML || box3.innerHTML != "null" && box3.innerHTML==box5.innerHTML && box5.innerHTML==box7.innerHTML ){
             console.log('winner');
+            winner=1;
         }
     
 
 }
-
+*/
 
 
 
@@ -31,18 +34,22 @@ var player1=1;
 var player2=0;
 
 function changetext(id){
-   
+  if(winner!=1){
+    if(id.innerHTML !=="x" && id.innerHTML!=="o"){
     if(player1==1){
         id.innerHTML='x';
         player2=1;
         player1=0;
+        getWinner();
     }
     else{
         id.innerHTML='o';
         player1=1;
         player2=0;
+        getWinner();
     }
-   
-    
+}
+
+  }    
 }
 
