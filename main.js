@@ -52,64 +52,82 @@ function changetext(id){
 
 if(count<countlimit){
 
-if(won!=1){
+    if(won!=1){
 
-    if(id.innerHTML !=="x" && id.innerHTML!=="o"){
-        count++;
-    if(player1==1){
-        id.innerHTML='x';
-        var turn = document.getElementById('turn');
-        player2=1;
-        player1=0;
-        won=getWinner();
+        if(id.innerHTML !=="x" && id.innerHTML!=="o"){
+            count++;
+            if(player1==1){
+                id.innerHTML='x';
+                var turn = document.getElementById('turn');
+                player2=1;
+                player1=0;
+                won=getWinner();
 
-        if(count<countlimit){
-        if(won==1){
-            turn.innerHTML="player x won";
-        }
-        else{
-            turn.innerHTML="o turn now";
-        }
-    }
-    else{
-        turn.innerHTML="Draw";
-    }
+                     if(count<=countlimit){
+                        if(won==1){
+                            turn.innerHTML="player x won";
+                         }
+                        else{
+                             if(count<countlimit){
+                                    turn.innerHTML="o turn now";
+                                 }
+                            else{
+                                 turn.innerHTML="Draw";
+                                    count=0;
+                                 }
+                            }       
+
+                    }
+                    else{
+                        turn.innerHTML="Draw";
+                         count=0;
+                         
+                         
+       
+                    }
      
-    }
-    else{
-        id.innerHTML='o';
-        var turn = document.getElementById("turn");
+            }
+            else{
+                id.innerHTML='o';
+                var turn = document.getElementById("turn");
         
-        player1=1;
-        player2=0;
-        won=getWinner();
+                player1=1;
+                player2=0;
+                won=getWinner();
 
-        if(count<countlimit){
-        if(won==1){
-            turn.innerHTML='player o won';
-        }
+                    if(count<=countlimit){
+                         if(won==1){
+                                turn.innerHTML='player o won';
+                            }
+                        else{
+                            if(count<countlimit){
+                                turn.innerHTML="x turn now";
+                             }
+                             else{
+                                 turn.innerHTML="Draw";
+                                    count=0;
+                                 }
+                            }   
+                    }
+                }     
+            }
+        }              
         else{
-        turn.innerHTML="x turn now";
-        }
+            restart();
     }
 
-    else{
-        trun.innerHTML="Draw";
-    }
-}
 }
 
-}
+    
 else{
     
   restart(); 
   count=0;   
 }
 }
-else{
-    restart();
-}
-}
+
+
+
 
 function restart(){
 
