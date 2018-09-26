@@ -1,8 +1,8 @@
 
-var player1=1;
+var player1=1;  
 var player2=0;
 var won=0;
-var countlimit=9;
+var countlimit=9; 
 var count=0;
 
 function getWinner(){
@@ -22,6 +22,7 @@ function getWinner(){
         if((box1.innerHTML =='x' ||box1.innerHTML =='o' ) && box1.innerHTML==box2.innerHTML && box2.innerHTML==box3.innerHTML || (box4.innerHTML =='x' ||box4.innerHTML =='o' ) && box4.innerHTML==box5.innerHTML && box5.innerHTML==box6.innerHTML || (box7.innerHTML =='x' ||box7.innerHTML =='o' ) && box7.innerHTML==box8.innerHTML && box8.innerHTML==box9.innerHTML  ){
             console.log('winner');
             winner=1;
+            
             
             
         }
@@ -65,21 +66,30 @@ if(count<countlimit){
 
                      if(count<=countlimit){
                         if(won==1){
-                            turn.innerHTML="player x won";
+                           
+                            turn.innerHTML="player X won";
+                            alert("player X won!!!");
+                          
                          }
                         else{
                              if(count<countlimit){
-                                    turn.innerHTML="o turn now";
+                                    turn.innerHTML="O turn now";
+                                    
+                                   
                                  }
                             else{
                                  turn.innerHTML="Draw";
+                                 alert("Game is drawn!!!");
                                     count=0;
                                  }
-                            }       
+                            }
+                            
+                        
 
                     }
                     else{
                         turn.innerHTML="Draw";
+                        alert("Game is drawn!!!");
                          count=0;
                          
                          
@@ -98,6 +108,9 @@ if(count<countlimit){
                     if(count<=countlimit){
                          if(won==1){
                                 turn.innerHTML='player o won';
+
+                                alert("player O won!!!");
+                               
                             }
                         else{
                             if(count<countlimit){
@@ -105,6 +118,7 @@ if(count<countlimit){
                              }
                              else{
                                  turn.innerHTML="Draw";
+                                 alert("Game is drawn!!!")
                                     count=0;
                                  }
                             }   
