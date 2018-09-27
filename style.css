@@ -1,3 +1,9 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
 #table{
     height: 120px;
     width: 120px;
@@ -8,14 +14,8 @@
     /*grid-gap:20px solid #000000;*/
     /*grid-auto-rows:100px;*/
     /*grid-auto-rows:minmax(100px,auto);-*/
-    
-    background: #d32525;
-    border: 2em solid #333333;*/
    
-    cursor: pointer;
-    line-height: 100px;
-    border:1px solid #7e1a7e;
-    
+    float: left;
 
 
     
@@ -65,6 +65,7 @@
     float:right;
     margin: 0;
     overflow: hidden;
+    padding: 0;
 
 
 }
@@ -79,13 +80,37 @@ footer{
 
  
 
-#head{
+h1{
     background: #000000;
     color: #ffffff;
     margin: 0;    
     min-height: 20px;
+  
    
     }
     
+.section1{
+    width: 200px;
+    min-height: 50px;
+    margin-top:0;
+    background-color: #15bd2b;
+    color: #000000;
+    float: auto; 
 }
 
+.section2{
+    width: 200px;
+    min-height: 50px;
+    margin-top:0;
+    background-color: #15bd2b;
+    color: #000000;
+    float: right; 
+}
+
+.content{
+    float: right;
+}
+
+.boxes{
+
+}
