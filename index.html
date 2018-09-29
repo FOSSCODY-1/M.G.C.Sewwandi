@@ -9,59 +9,62 @@
 </head>
 
 <body>
-
-    <h1 id="head"> Tic Tac Toe</h1>
-
+    <header>
+    
+        <h1><span class="highlight"> Tic</span> Tac Toe</h1>
+    
+</header>
     <div class="container">
 
-        
-    <div class="section1">
-            <h2>Instruction</h2>
+
+        <div class="section1">
+            <h2 id="instruction">Instruction</h2>
             <ul>
-                <li>You play as one player</li>
+                <li>You play as one player.</li>
                 <li>Select the square that you want to put your symbol into by clicking them</li>
                 <li>You cannot occupy a square that is already occupied.</li>
-    
+                <li>If you want to restart the game, click Restart button or click any square in the game box.</li>
+                <li>The next player is displayed on display box & after you win,display a alert on top </li>
             </ul>
-    
+
         </div>
 
         <div class="boxes">
-       
 
-        <div id="table">
-            <button id=b1 onclick="changetext(this)"></button>
-            <button id=b2 onclick="changetext(this)"></button>
-            <button id=b3 onclick="changetext(this)"></button>
-            <button id=b4 onclick="changetext(this)"></button>
-            <button id=b5 onclick="changetext(this)"></button>
-            <button id=b6 onclick="changetext(this)"></button>
-            <button id=b7 onclick="changetext(this)"></button>
-            <button id=b8 onclick="changetext(this)"></button>
-            <button id=b9 onclick="changetext(this)"></button>
-        </div>
 
-        <div class="content">
+            <div id="table">
+                <button id=b1 onclick="changetext(this)"></button>
+                <button id=b2 onclick="changetext(this)"></button>
+                <button id=b3 onclick="changetext(this)"></button>
+                <button id=b4 onclick="changetext(this)"></button>
+                <button id=b5 onclick="changetext(this)"></button>
+                <button id=b6 onclick="changetext(this)"></button>
+                <button id=b7 onclick="changetext(this)"></button>
+                <button id=b8 onclick="changetext(this)"></button>
+                <button id=b9 onclick="changetext(this)"></button>
+            </div>
+
+            <div class="content">
                 <div class="header">
-                   <h2 id="turn">play</h2>
+                    <h2 id="turn">play</h2>
                 </div>
                 <div id="replay">
                     <button id="Restart" onclick="restart()">Restart</button>
                 </div>
             </div>
 
+        </div>
+
+
+        <div class="section2">
+            <h2 id="about">What is Tic-Tac-toe?</h2>
+            <p>The Tic-Tac-Toe game is a game for two players, X and O who take turns making the space in a 3X3 grid.The player
+                who gets in placing three of their symbos in a horizontal or vertical or diagonal now wins the game.</p>
+
+        </div>
+
     </div>
 
-
-    <div class="section2">
-        <h2>What is Tic-Tac-toe?</h2>
-        <p>The Tic-Tac-Toe game is a game for two players, X and O who take turns making the space in a 3X3 grid.The player
-            who gets in placing three of their symbos in a horizontal or vertical or diagonal now wins the game.</p>
-
-    </div>
-
-</div>
-   
 </body>
 
 </html>

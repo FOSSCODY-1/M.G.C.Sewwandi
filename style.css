@@ -5,12 +5,12 @@ body{
 }
 
 #table{
-    height: 240px;
-    width: 240px;
-    font-size: 12px;
+    height: 300px;
+    width: 300px;
+    font-size: 30px;
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    margin: 50px auto 0 auto;
+    margin-top:50px; 
     /*grid-gap:20px solid #000000;*/
     /*grid-auto-rows:100px;*/
     /*grid-auto-rows:minmax(100px,auto);-*/
@@ -31,12 +31,14 @@ body{
     background: #7d2dbe;
     color: #ffffff;
     font-weight: bold;
-    border: 2px solid rgb(131, 189, 228);
+    border: 5px solid rgb(53, 198, 235);
     cursor: pointer;
     width:200px;
-    height: 50px;
-    font-size: 12px;
+    height: 70px;
+    font-size: 36px;
     display: block;
+    margin-left: 90px;
+    margin-top: 30px;
     
 
 }
@@ -46,29 +48,36 @@ body{
     /*border-radius: 30px;*/
     border:0.1px solid #94928b;
    color: #ffffff;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
+    font-size: 64px;
+    
 
 }
 
 .header{
-    width: 300px;
-    height:60px ;
+    width: 375px;
+    height:80px ;
     font-family: Arial, Helvetica, sans-serif;
-    font-size:12px; 
+    font-size:24px; 
     background: #15bd2b;
     color: bisque;
-    text-align: center;
-    border: 1px solid yellow;
-    display: block;
-    cursor: pointer;
+   
+    border: 5px solid #ffff00;
     float:right;
-    margin: 0;
+    margin-left:20px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 70px;
     overflow: hidden;
-    padding: 0;
+    padding-bottom: 10px;
+    padding-top: 0;
 
+   
 
 }
+
+
 
 footer{
     padding: 20px;
@@ -81,32 +90,43 @@ footer{
  
 
 h1{
-    background: #000000;
-    color: #ffffff;
+    background-color: #000000;
+   
     margin: 0;    
-    min-height: 20px;
+    min-height: 76px;
+    padding-left: 20px;
+    font-style: bold;
+    font-size: 48px;
+    color: rgb(248, 233, 16);
+    padding-top: 20px;
+    
   
    
     }
     
 .section1{
-    width: 200px;
-    min-height: 100px;
-    margin-top:0;
-    background-color: #15bd2b;
+    
+    background-color: #49f7df;
     color: #000000;
     margin: 0;
     padding: 0;
-    font-size: 12px;
+    font-size: 20px;
     text-align: center;
+    border:3px #411064 groove;
 }
 
 .section2{
-    width: 200px;
-    min-height: 50px;
-    margin-top:0;
-    background-color: #15bd2b;
+   
+    background-color: #f8b1db;
     color: #000000;
+   
+    padding:5px;
+    font-size: 20px;
+    text-align: center;
+    border:3px #411064 groove;
+
+
+
     
 }
 
@@ -115,7 +135,34 @@ h1{
 }
 
 .boxes{
-    width: 40%;
-    
+    margin: auto;
 
+}
+
+.container{
+    min-height: 560px;
+    display: grid;
+    grid-template-columns: 250px auto 250px;
+}
+
+#instruction{
+    background-color: rgb(165, 65, 140);
+    color: aliceblue;
+    padding-top: 0;
+    font-size: 36px;
+}
+
+header .highlight{
+    color:red;
+    font-weight: bold;
+    
+    
+}
+
+
+#about{
+    background-color: rgb(165, 65, 140);
+    color: aliceblue;
+    padding-top: 0;
+    font-size: 36px;
 }
