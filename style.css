@@ -72,7 +72,7 @@ h1{
 }
     
 .section1{
-    background-color:#6c286e ;
+    background-color:#100766;
     color: #f7f0f0;
     margin: 0;
     padding: 0;
@@ -82,7 +82,7 @@ h1{
    
 }
 .section2{
-    background-color:#722083 ;
+    background-color:#100766 ;
     color: #f8f5f5;
     padding:5px;
     font-size: 20px;
@@ -107,7 +107,7 @@ h1{
 }
 
 #instruction{
-    background-color: rgb(177, 66, 151);
+    background-color: rgb(101, 173, 231);
     color: aliceblue;
     padding-top: 0;
     font-size: 36px;
@@ -119,7 +119,7 @@ header .highlight{
 }
 
 #about{
-    background-color: rgb(177, 66, 151);;
+    background-color: rgb(64, 165, 233);;
     color: aliceblue;
     padding-top: 0;
     font-size: 36px;
