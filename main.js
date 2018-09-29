@@ -1,14 +1,14 @@
 
 var player1 = 1; /*player1 has 1st chance to play*/
 var player2 = 0;/*player2 has 2nd chance to play*/
-var won = 0; 
+var won = 0;
 var countlimit = 9; /*game is drawn after 9 terms*/
 var count = 0;
 
 function getWinner() { /*To find winner*/
     var winner;
     /*Get the created button's data in html to javascript*/
-        var box1 = document.getElementById("b1"),
+    var box1 = document.getElementById("b1"),
         box2 = document.getElementById("b2"),
         box3 = document.getElementById("b3"),
         box4 = document.getElementById("b4"),
@@ -20,7 +20,7 @@ function getWinner() { /*To find winner*/
 
     var turn = document.getElementById("turn");
     /*check buttons in grid horizontally*/
-    if ((box1.innerHTML == 'X' || box1.innerHTML == 'o') && box1.innerHTML == box2.innerHTML && box2.innerHTML == box3.innerHTML || (box4.innerHTML == 'x' || box4.innerHTML == 'o') && box4.innerHTML == box5.innerHTML && box5.innerHTML == box6.innerHTML || (box7.innerHTML == 'x' || box7.innerHTML == 'o') && box7.innerHTML == box8.innerHTML && box8.innerHTML == box9.innerHTML) {
+    if ((box1.innerHTML == 'X' || box1.innerHTML == 'O') && box1.innerHTML == box2.innerHTML && box2.innerHTML == box3.innerHTML || (box4.innerHTML == 'X' || box4.innerHTML == 'O') && box4.innerHTML == box5.innerHTML && box5.innerHTML == box6.innerHTML || (box7.innerHTML == 'X' || box7.innerHTML == 'O') && box7.innerHTML == box8.innerHTML && box8.innerHTML == box9.innerHTML) {
         console.log('winner'); /*print winner in console*/
         winner = 1; /*if a player won,winner is  1*/
 
@@ -28,12 +28,12 @@ function getWinner() { /*To find winner*/
 
     }
     /*check buttons in grid  vertically*/
-    else if ((box1.innerHTML == 'X' || box1.innerHTML == 'O') && box1.innerHTML == box4.innerHTML && box4.innerHTML == box7.innerHTML || (box2.innerHTML == 'x' || box2.innerHTML == 'o') && box2.innerHTML == box5.innerHTML && box5.innerHTML == box8.innerHTML || (box3.innerHTML == 'x' || box3.innerHTML == 'o') && box3.innerHTML == box6.innerHTML && box6.innerHTML == box9.innerHTML) {
+    else if ((box1.innerHTML == 'X' || box1.innerHTML == 'O') && box1.innerHTML == box4.innerHTML && box4.innerHTML == box7.innerHTML || (box2.innerHTML == 'X' || box2.innerHTML == 'O') && box2.innerHTML == box5.innerHTML && box5.innerHTML == box8.innerHTML || (box3.innerHTML == 'X' || box3.innerHTML == 'O') && box3.innerHTML == box6.innerHTML && box6.innerHTML == box9.innerHTML) {
         console.log('winner');
         winner = 1;
     }
     /*check buttons in grid  diagonally*/
-    else if ((box1.innerHTML == 'X' || box1.innerHTML == 'O') && box1.innerHTML == box5.innerHTML && box5.innerHTML == box9.innerHTML || (box3.innerHTML == 'x' || box3.innerHTML == 'o') && box3.innerHTML == box5.innerHTML && box5.innerHTML == box7.innerHTML) {
+    else if ((box1.innerHTML == 'X' || box1.innerHTML == 'O') && box1.innerHTML == box5.innerHTML && box5.innerHTML == box9.innerHTML || (box3.innerHTML == 'X' || box3.innerHTML == 'O') && box3.innerHTML == box5.innerHTML && box5.innerHTML == box7.innerHTML) {
         console.log('winner');
         winner = 1;
     }
@@ -57,10 +57,10 @@ function changetext(id) {
     if (count < countlimit) /*if no of rounds is not finished*/ {
 
         if (won != 1)  /*if player didn't win game*/ {
-      
-            if (id.innerHTML !== "X" && id.innerHTML !== "O") /*if the buttons has nothing*/{
+
+            if (id.innerHTML !== "X" && id.innerHTML !== "O") /*if the buttons has nothing*/ {
                 count++;/*increase no of round by 1*/
-                if (player1 == 1) /*palyer1 has the turn now*/{
+                if (player1 == 1) /*palyer1 has the turn now*/ {
                     id.innerHTML = 'X';/*display X on the button */
                     var turn = document.getElementById('turn');
                     player2 = 1;
@@ -82,7 +82,7 @@ function changetext(id) {
                             }
                             else {
                                 turn.innerHTML = "Draw.";/*rounds are finished*/
-                                alert("Game is drawn!!!"); 
+                                alert("Game is drawn!!!");
                                 count = 0;
                             }
                         }
@@ -163,7 +163,7 @@ function restart()/*restart game*/ {
         box9 = document.getElementById("b9");
 
 
-/*set all buttons without any data*/
+    /*set all buttons without any data*/
     box1.innerHTML = null;
     box2.innerHTML = null;
     box3.innerHTML = null;
