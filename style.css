@@ -72,8 +72,8 @@ h1{
 }
     
 .section1{
-    background-color: #321f4b;
-    color: #ffffff;
+    background-color: #b10e24;
+    color: #f7f0f0;
     margin: 0;
     padding: 0;
     font-size: 20px;
@@ -82,8 +82,8 @@ h1{
    
 }
 .section2{
-    background-color:#0c1935 ;
-    color: #f3e8f0;
+    background-color:#f3ce2a ;
+    color: #161616;
     padding:5px;
     font-size: 20px;
     text-align: center;
@@ -106,7 +106,7 @@ h1{
 }
 
 #instruction{
-    background-color: rgb(165, 65, 140);
+    background-color: rgb(22, 5, 18);
     color: aliceblue;
     padding-top: 0;
     font-size: 36px;
@@ -118,7 +118,7 @@ header .highlight{
 }
 
 #about{
-    background-color: rgb(165, 65, 140);
+    background-color: rgb(29, 6, 23);
     color: aliceblue;
     padding-top: 0;
     font-size: 36px;
