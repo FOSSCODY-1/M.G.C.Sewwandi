@@ -11,20 +11,12 @@ body{
     display:grid;
     grid-template-columns: repeat(3,1fr);
     margin-top:50px; 
-    /*grid-gap:20px solid #000000;*/
-    /*grid-auto-rows:100px;*/
-    /*grid-auto-rows:minmax(100px,auto);-*/
-   
     float: left;
-
-
-    
 }
 
 #table :hover{
     background:rgb(137, 133, 146);
     color: #ffffff;
-
 }
 
 #Restart{
@@ -39,20 +31,15 @@ body{
     display: block;
     margin-left: 90px;
     margin-top: 30px;
-    
-
 }
 
 #b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8,#b9{
     background: #411064;
-    /*border-radius: 30px;*/
     border:0.1px solid #94928b;
-   color: #ffffff;
+    color: #ffffff;
     width: 100px;
     height: 100px;
     font-size: 64px;
-    
-
 }
 
 .header{
@@ -60,10 +47,8 @@ body{
     height:80px ;
     font-family: Arial, Helvetica, sans-serif;
     font-size:24px; 
-    background: #15bd2b;
-    color: bisque;
-   
-    border: 5px solid #ffff00;
+    background: #0b0a52;
+    color: white;
     float:right;
     margin-left:20px;
     text-align: center;
@@ -72,26 +57,11 @@ body{
     overflow: hidden;
     padding-bottom: 10px;
     padding-top: 0;
-
-   
-
 }
-
-
-
-footer{
-    padding: 20px;
-    margin-top: 20ox;
-    color:#ffffff;
-    background-color: #e8491d;
-    text-align: center;
-}
-
  
 
 h1{
     background-color: #000000;
-   
     margin: 0;    
     min-height: 76px;
     padding-left: 20px;
@@ -99,34 +69,26 @@ h1{
     font-size: 48px;
     color: rgb(248, 233, 16);
     padding-top: 20px;
-    
-  
-   
-    }
+}
     
 .section1{
-    
-    background-color: #49f7df;
-    color: #000000;
+    background-color: #321f4b;
+    color: #ffffff;
     margin: 0;
     padding: 0;
     font-size: 20px;
     text-align: center;
     border:3px #411064 groove;
+   
 }
-
+/*#f8b1db*/
 .section2{
-   
-    background-color: #f8b1db;
-    color: #000000;
-   
+    background-color:#0c1935 ;
+    color: #f3e8f0;
     padding:5px;
     font-size: 20px;
     text-align: center;
     border:3px #411064 groove;
-
-
-
     
 }
 
@@ -136,7 +98,6 @@ h1{
 
 .boxes{
     margin: auto;
-
 }
 
 .container{
@@ -154,11 +115,8 @@ h1{
 
 header .highlight{
     color:red;
-    font-weight: bold;
-    
-    
+    font-weight: bold;   
 }
-
 
 #about{
     background-color: rgb(165, 65, 140);
