@@ -1,4 +1,4 @@
-# Foobar ![CI status](https://img.shields.io/badge/build-passing-brightgreen.svg)
+# Foobar 
 
 Foobar is a Python library for dealing with word pluralization.
 
